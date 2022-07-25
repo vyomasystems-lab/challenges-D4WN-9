@@ -12,4 +12,4 @@ MODULE   := test_mux     # test
 include $(shell cocotb-config --makefiles)/Makefile.sim
 
 clean_all: clean
-	rm -rf *.xml sim_build __pycache__ 
+	rm -rf *.xml sim_build __pycache__
