@@ -16,5 +16,5 @@ async def mux_exhaustive_test(dut):
 			for k in range(31):
 				dut.sel.value = k
 				await Timer(1, units='ns')
-				cocotb.log.info(f'i={i:05} j={j:05} model={x[k]:05} DUT={int(dut.out.value):05}')
+				dut._log.info(f'i={i:05} j={j:05} model={x[k]:05} DUT={int(dut.out.value):05}')
 				assert dut.out.value == x[k], 'TEST FAIL with sel={k}'.format(k = dut.sel.value)
