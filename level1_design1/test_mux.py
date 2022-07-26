@@ -4,7 +4,7 @@ from cocotb.triggers import Timer
 
 @cocotb.test()
 async def mux_exhaustive_test(dut):
-	input_arr = np.int(np.zeros(31))
+	input_arr = np.int32(np.zeros(31))
 	# input_arr = [0] * 30
 	input_arr[0] = 1
 
