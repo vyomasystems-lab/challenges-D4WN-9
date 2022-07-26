@@ -1,11 +1,11 @@
 import cocotb
-from cocotb.triggers import Timer
 import numpy as np
+from cocotb.triggers import Timer
 
 @cocotb.test()
 async def mux_exhaustive_test(dut):
 	input_arr = np.zeros(31)
-	input_arr[0]=1
+	input_arr[0] = 1
 
 	for i in range(31):
 		x = np.roll(input_arr, i)
@@ -16,4 +16,4 @@ async def mux_exhaustive_test(dut):
 				dut.sel.value = k
 				await Timer(1, units='ns')
 				cocotb.log.info('##### CTB: Develop your test here ########')
-				assert dut.out.value == x[k], 'TEST FAIL with sel={k}'.format(k=dut.sel.value)
+				assert dut.out.value == x[k], 'TEST FAIL with sel={k}'.format(k = dut.sel.value)
