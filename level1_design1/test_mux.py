@@ -1,5 +1,5 @@
 import cocotb
-# import numpy as np
+import numpy as np
 from cocotb.triggers import Timer
 
 @cocotb.test()
