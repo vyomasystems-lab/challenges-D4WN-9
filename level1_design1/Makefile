@@ -4,9 +4,9 @@ TOPLEVEL_LANG ?= verilog
 
 PWD=$(shell pwd)
 
-VERILOG_SOURCES = $(PWD)/mux_fixed.v
+VERILOG_SOURCES = $(PWD)/mux.v
 
-TOPLEVEL := mux_fixed    # design
+TOPLEVEL := mux          # design
 MODULE   := test_mux     # test
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
