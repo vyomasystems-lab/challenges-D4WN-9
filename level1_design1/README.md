@@ -4,7 +4,7 @@ The verification environment is setup using [Vyoma's UpTickPro](https://vyomasys
 
 *Gitpod ID is shown in bottom left of screenshot below. I have used VS Code to SSH into Gitpod environment*
 
-!(image)[https://imgur.com/a/PHlborz.png]
+<img src="https://imgur.com/a/PHlborz.png"/>
 
 ## Verification Environment
 
