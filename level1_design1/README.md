@@ -10,6 +10,8 @@ The verification environment is setup using [Vyoma's UpTickPro](https://vyomasys
 
 The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drives inputs to the Design Under Test (multiplexer module) which takes in 31 2-bit inputs and a 5 bit select input which selects one of the inputs to transfer to the output.
 
+## Test Despcription
+
 The values are assigned to the input port using a two nested for loops. It is an exhaustive test which drives input in all possible combinations.
 
 The assert statement is used for comparing the multiplexer's output to the expected value. The assert statement is inside of a try block, this ensures the exhaustiveness of test as execution of code keeps on happening until all input combinations are driven without TEST failing. The bug is captured through printing the assertion statements that are saved in a list data structure inside the except block.
