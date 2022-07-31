@@ -56,7 +56,7 @@ Exhaustive test was implemented as all input combinations need to be driven to t
 
 ### Numpy Library - Python
 
-A numpy array is initialised using ``numpy.zeros`` and the first element is set to ``1``. This is used as the first input combination to be driven to the multiplexer. On each iteration ``numpy.roll`` is used to displace the ``1`` value to a new unique position. This creates a unique input combination for all iterations. Hence exhaustive test is achieved while minimising number of lines in code. 
+A numpy array is initialised using ``numpy.zeros`` and the first element is set to ``1``. This is used as the first input combination to be driven to the multiplexer. On each iteration ``numpy.roll`` is used to displace the ``1`` value to a new unique position. This creates a unique input combination for all iterations. Hence exhaustive test is achieved while minimising number of lines in the testbench code file.
 
 ## Is the verification complete ?
 
