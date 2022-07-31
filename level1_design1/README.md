@@ -4,7 +4,7 @@ The verification environment is setup using [Vyoma's UpTickPro](https://vyomasys
 
 *Gitpod ID is shown in bottom left of screenshot below. I have used VS Code to SSH into Gitpod environment*
 
-![](https://imgur.com/a/PHlborz.jpg)
+![](https://imgur.com/a/PHlborz.png)
 
 ## Verification Environment
 
@@ -44,7 +44,7 @@ the correct logic should have ''5'b11110'' input address (select bits) which is 
 ## Design Fix
 Updating the design and re-running the test makes the test pass.
 
-![](https://imgur.com/a/tbJzk5X.jpg)
+![](https://imgur.com/a/tbJzk5X.png)
 
 The updated design is checked in as fixed_mux.v
 
