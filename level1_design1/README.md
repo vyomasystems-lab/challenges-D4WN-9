@@ -30,7 +30,7 @@ Based on the above test input and analysing the design, we see the following
 5'b01101: out = inp12;
 5'b01101: out = inp13;
 ```
-the correct logic should have ''5'b01100'' input address (select bits) to drive ''inp12'' to ''out''
+the correct logic should have ``5'b01100`` input address (select bits) to drive ``inp12`` to ``out``
 
 and also
 
@@ -39,7 +39,7 @@ and also
 default: out = 0;
 ```
 
-the correct logic should have ''5'b11110'' input address (select bits) which is missing enirely, to drive ''inp30'' to ''out''
+the correct logic should have ``5'b11110`` input address (select bits) which is missing enirely, to drive ``inp30`` to ``out``
 
 ## Design Fix
 Updating the design and re-running the test makes the test pass.
@@ -50,7 +50,7 @@ The updated design is checked in as fixed_mux.v
 
 ## Verification Strategy
 
-Exhaustive test was implemented as all input combinations need to be driven to the mux to get the required output. No change in input driven was applied, i.e. ''01'' input was driven in all combinations as it didn't affect the output.
+Exhaustive test was implemented as all input combinations need to be driven to the mux to get the required output. No change in input driven was applied, i.e. ``01`` input was driven in all combinations as it didn't affect the output.
 
 ## Is the verification complete ?
 
