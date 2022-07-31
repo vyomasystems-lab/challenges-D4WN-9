@@ -16,7 +16,7 @@ The values are assigned to the input port using a two nested for loops. It is an
 
 The assert statement is used for comparing the multiplexer's output to the expected value. The assert statement is inside of a try block, this ensures the exhaustiveness of test as execution of code keeps on happening until all input combinations are driven without TEST failing. The bug is captured through printing the assertion statements that are saved in a list data structure inside the except block.
 
-The following errors are reflected in terminal through log 
+The following assertion errors are reflected in terminal:
 ```
 TEST FAIL @ sel = 01100, in = 1, out = 00
 TEST FAIL @ sel = 01101, in = 0, out = 01
