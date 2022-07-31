@@ -6,8 +6,7 @@ e_list=[]
 
 @cocotb.test()
 async def test_all_bugs(dut):
-	clock = Clock(dut.clk, 10, units="us")  # Create a 10us period clock on port clk
-	cocotb.start_soon(clock.start())        # Start the clock
+	cocotb.start_soon(Clock(dut.clk, 10, units="us").start())
 	dut.reset.value = 0
 	await RisingEdge(dut.clk)
 
@@ -19,9 +18,9 @@ async def test_all_bugs(dut):
 			continue
 		dut.inp_bit.value = int(inp_seq[i])
 		await RisingEdge(dut.clk)
-		dut._log.info(f'input={int(inp_seq[i-3: i+1]):04}')
-		dut._log.info(f'expected_output={int(out_seq[i]):01}')
-		dut._log.info(f'actual_output={int(dut.seq_seen.value):01}')
+		dut._log.info(f'input={int(inp_seq[i-3: i+1],2):04}')
+		dut._log.info(f'expected_output={int(out_seq[i],2):01}')
+		dut._log.info(f'actual_output={int(str(dut.seq_seen.value),2):05}')
 		try:
 			assert dut.seq_seen.value == out_seq[i], "TEST FAIL @ inp = {A}, out = {B}".format(A=dut.inp_bit.value, B=dut.seq_seen.value)
 		except AssertionError as e:
