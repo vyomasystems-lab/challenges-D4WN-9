@@ -54,4 +54,4 @@ Exhaustive test was implemented as all input combinations need to be driven to t
 
 ## Is the verification complete ?
 
-Verification stands complete as all test cases have driven the required input to recieve the correct expected output. Moreover the buggy design has been fixed and it passes in all test cases.
+Verification stands complete as all test cases have driven to buggy design and output has been observed. Moreover the buggy design has been fixed and all test cases give expected output.
